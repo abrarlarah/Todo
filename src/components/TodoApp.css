@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #152238;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  h1 {
+    margin-bottom: 20px; /* Add spacing below the title */
+    text-align: center;
+  }
+  
+  .todo-input {
+    margin-bottom: 20px;
+  }
+  
+  .todo-input input {
+    padding: 10px;
+    font-size: 16px;
+    width: 560px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .todo-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .todo-input button:hover {
+    background-color: #218838;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e8d5f5;
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+    width: 640px;
+    border-radius: 4px;
+  }
+  
+  .todo-item span {
+    flex-grow: 1;
+    text-align: left;
+    transition: all 0.2s ease-in-out; /* Smooth effect for strikethrough */
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .todo-item input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #888; /* Grey out the text for better visual effect */
+  }
+  
+  .todo-item input {
+    flex-grow: 1;
+    padding: 5px;
+  }
+  
+  .actions button {
+    margin-left: 10px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .completed {
+    text-decoration: line-through;
+    color: #484242; /* Dimmed color for completed tasks */
+  }
+  
